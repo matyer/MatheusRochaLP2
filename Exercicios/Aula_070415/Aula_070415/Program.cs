@@ -10,6 +10,12 @@ namespace Aula_070415
     {
         static void Main(string[] args)
         {
+            //Solucao1();
+            Solucao2();
+        }
+
+        static void Solucao1()
+        {
             Console.WriteLine("Digite uma frase");
             string frase = Console.ReadLine();
 
@@ -42,8 +48,39 @@ namespace Aula_070415
                 }
             }
             Console.WriteLine();
-          
+        }
+        static void Solucao2()
+        {
+            string texto = Console.ReadLine();
+            int n = int.Parse(Console.ReadLine());
 
+            string tmp = Console.ReadLine();
+            char c = tmp.ToLower()[0];
+
+            for (int i = 0; i < texto.Length; i+= n)
+            {
+                if (i + n > texto.Length)
+                {
+                    Console.WriteLine(texto.Substring(i));
+                }
+                else
+                {
+                    Console.WriteLine(texto.Substring(i, n));
+                }
+            }
+
+            string[] palavras = texto.ToLower().Split(' ');
+
+            int qtd = 0;
+            foreach (var palavra in palavras)
+	        {
+                if (palavra[0] == c)
+                {
+                    qtd++;
+                }
+	        }
+
+            Console.WriteLine(qtd);
         }
     }
 }
