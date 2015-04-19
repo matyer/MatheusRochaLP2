@@ -1,0 +1,1 @@
+O motivo pelo qual o programa para de funcionar é a propriedade que os tipos numéricos pussem, a limitação tanto positiva quanto negativa. Alguns ainda possuem limitação decimal, mas temos a opção de usar tipos numéricos maiores ou mais precisos.
