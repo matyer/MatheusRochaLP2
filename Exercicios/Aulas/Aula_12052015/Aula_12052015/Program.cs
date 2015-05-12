@@ -51,6 +51,15 @@ namespace Aula_12052015
             {
                 Console.WriteLine("Coluna {0}: {1} azulejos quebrados.", i, badTilesPerColumn[i]);
             }
+
+            Console.WriteLine();
+
+            var pricePerTile = decimal.Parse(Console.ReadLine());
+            var totalPrice = badTiles * pricePerTile;
+
+            Console.WriteLine();
+
+            Console.WriteLine("Custo para trocar os azulejos quebrados: R${0:0.00}", totalPrice);
         }
     }
 }
