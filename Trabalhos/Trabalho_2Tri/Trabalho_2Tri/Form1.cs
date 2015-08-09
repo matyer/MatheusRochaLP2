@@ -50,7 +50,7 @@ namespace Trabalho_2Tri
             int idcar = int.Parse(addPassageiro.Text) - 1;
 
 
-            if (quantidadePassageiros < passageirosalvo)
+            if (quantidadePassageiros > passageirosalvo)
             {
                 if (idcar < 0 || idcar > quantidadeCarros)
                 {
