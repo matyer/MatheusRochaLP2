@@ -45,7 +45,7 @@
     <Compile Include="Gerente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Terceirizados.cs" />
+    <Compile Include="Terceirizado.cs" />
     <Compile Include="Trabalhador.cs" />
   </ItemGroup>
   <ItemGroup>

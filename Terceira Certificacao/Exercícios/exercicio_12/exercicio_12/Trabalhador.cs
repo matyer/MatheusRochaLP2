@@ -13,7 +13,25 @@ namespace exercicio_12
         public int DataNascimento { get; set; }
         public double Salario { get; set; }
         public int Matricula{ get; set; }
-        
+        virtual public double SalarioFinal { get; set; }
+
+        virtual public double v_alimentacao
+        {
+            get
+            {
+                if (Salario * (8/100) < 750)
+                {
+                    return Salario * (8/100);
+                }
+                else
+                {
+                    return 750;
+                }
+            }
+            set { v_alimentacao = value; }
+        }
+
+
 
     }
 }
