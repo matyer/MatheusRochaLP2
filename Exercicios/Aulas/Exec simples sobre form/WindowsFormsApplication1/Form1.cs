@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
         {
             Form2 f = new Form2();
             f.ShowDialog();
-            f.Dado = textBox1.Text();
+            textBox1.Text = f.Dado.ToString();
         }
     }
 }
